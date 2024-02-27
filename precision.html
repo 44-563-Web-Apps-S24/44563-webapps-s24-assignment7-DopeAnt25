@@ -18,7 +18,7 @@
   }
   h1 {
     color: #259e20;
-    font-size: 24px;
+    font-size: 36px;
   }
   #target, #counter {
     margin-top: 20px;
@@ -30,7 +30,6 @@
 </style>
 <body>
   <h1>Anthony Speed Check</h1>
-  
   <div id="target"> Your Time: </div>
   <div id="counter"> Count: </div>
   <button type="button" class="btn btn-success"onclick="startTime()">Start Time</button>
@@ -57,17 +56,6 @@
         document.getElementById("target").innerHTML = "Time was: " + newTime
       }
     },4000)
-  }
-  function buttonPress1() {
-    setTimeout(function(){
-      document.getElementById('target').style.color = "red"
-    }, 3000)
-  }
-
-  function buttonPress2() {
-    setTimeout(()=>{
-      document.getElementById('target').style.color = "red"
-    }, 3000)
   }
   </script>
 
