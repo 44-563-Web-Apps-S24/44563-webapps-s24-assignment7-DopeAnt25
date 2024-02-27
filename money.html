@@ -53,57 +53,123 @@
     <body>
         <h1>Find the coins by Anthony</h1>
         <div id = "instructions">Click on the locations to find coins, Beward the <b>Monster</b></div>
-        <div id = "locations"> Number of Locations Checked is zero</div>
-        <div id = "score">Score is zero</div>
-        <div id = "help">Click for help</div>
-        <div id = "help">Report Help</div>
+        <div id = "locations"> Number of Locations Checked is: 0</div>
+        <div id = "score">Score is: 0</div>
+        <div class="help" id = "help" onclick="help()">Click for help</div>
+        <div id = "helpOP">Report Help</div>
         <div class="table">
             <div class="row">
-              <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-              <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-              <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-              <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-              <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-              <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-              <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
+              <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img0" onclick="check(0)"></div>
+              <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img1" onclick="check(1)"></div>
+              <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img2" onclick="check(2)"></div>
+              <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img3" onclick="check(3)"></div>
+              <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img4" onclick="check(4)"></div>
             </div>
             <div class="row">
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img5" onclick="check(5)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img6" onclick="check(6)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img7" onclick="check(7)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img8" onclick="check(8)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img9" onclick="check(9)"></div>
               </div>
               <div class="row">
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img10" onclick="check(10)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img11" onclick="check(11)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img12" onclick="check(12)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img13" onclick="check(13)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img14" onclick="check(14)"></div>
               </div>
               <div class="row">
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img15" onclick="check(15)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img16" onclick="check(16)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img17" onclick="check(17)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img18" onclick="check(18)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img19" onclick="check(19)"></div>
               </div>
               <div class="row">
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
-                <div class="cell"><img src="Building.jpg" height="100px" width="100px"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img20" onclick="check(20)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img21" onclick="check(21)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img22" onclick="check(22)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img23" onclick="check(23)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img24" onclick="check(24)"></div>
+              </div>
+              <div class="row">
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img25" onclick="check(25)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img26" onclick="check(26)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img27" onclick="check(27)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img28" onclick="check(28)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img29" onclick="check(29)"></div>
+              </div>
+              <div class="row">
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img30" onclick="check(30)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img31" onclick="check(31)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img32" onclick="check(32)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img33" onclick="check(33)"></div>
+                <div class="cell"><img src="Building.jpg" height="100px" width="100px" id = "img34" onclick="check(34)"></div>
               </div>
         </div>
-        
+    <script>
+        var ids = []
+        for (let i = 0; i <= 34 ; i++){
+            ids.push(i)
+        }
+        var score = 0
+        var locations = 0
+        var lastLocation = 0
+        var fancyCoinLocations = [2,5,14,23,33]
+        var monsterLocation = 20
+        var gameOver = false
+
+        function check(position){
+            if (gameOver == true){
+                return;
+            }else{
+                var id = ids[position]
+                var img = document.getElementById("img" + String(id))
+                if(id == monsterLocation){
+                    img.src = "Dragon.png"
+                    gameOver = true
+                    score -= 5
+                }else if(fancyCoinLocations.includes(id)){
+                    img.src = "Coin-Fancy.png"
+                    score += 3
+                }else{
+                    img.src = "Coin.jpg"
+                    score += 1
+                }            
+                locations += 1
+                document.getElementById("locations").innerHTML = "The number of locations check is: " + locations
+                document.getElementById("score").innerHTML = "Score is: "+ score
+                lastLocation = position
+            }
+        }
+        function help(){
+            var help = document.getElementById("helpOP")
+            var col = lastLocation % 5
+            var row = Math.floor(lastLocation/5)
+            console.log ("COL: "+ col)
+            console.log ("ROW: "+ row)
+            var top = lastLocation - 5
+            var bot = lastLocation + 5
+            var left = lastLocation - 1
+            var right = lastLocation + 1
+            if (fancyCoinLocations.includes(top) || fancyCoinLocations.includes(bot) 
+            || fancyCoinLocations.includes(left) || fancyCoinLocations.includes(right)){
+                help.innerHTML = "So Close"
+                return;
+            }else if (monsterLocation == top || monsterLocation == bot ||
+            monsterLocation == left || monsterLocation == right ||
+            monsterLocation == (top-1) || monsterLocation == (top+1) ||
+            monsterLocation == (bot-1) || monsterLocation == (bot+1)){
+                help.innerHTML= "Grrr"
+                return;
+            }
+            else{
+                help.innerHTML = "all clear"
+                return;
+            }
+
+        }
+    </script>  
     </body>
 </html>
