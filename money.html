@@ -40,7 +40,8 @@
             border-collapse: collapse;
             }
         .row {
-            display: table-row;
+            display: flex;
+            justify-content: center;
         }
         .cell {
             display: table-cell;
@@ -116,10 +117,9 @@
         var score = 0
         var locations = 0
         var lastLocation = 0
-        var fancyCoinLocations = [2,5,14,23,33]
+        var fancyCoinLocations = [2,5,14,19,23,33]
         var monsterLocation = 20
         var gameOver = false
-
         function check(position){
             if (gameOver == true){
                 return;

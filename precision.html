@@ -10,12 +10,30 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  h1 {
+    color: #259e20;
+    font-size: 24px;
+  }
+  #target, #counter {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .btn {
+    cursor: pointer;
+  }
+</style>
 <body>
   <h1>Anthony Speed Check</h1>
   
   <div id="target"> Your Time: </div>
   <div id="counter"> Count: </div>
-  <button type="button" class="btn btn-success">Start Time</button>
+  <button type="button" class="btn btn-success"onclick="startTime()">Start Time</button>
   <button type="button" class="btn btn-danger" onclick="recordTime()">Stop Time</button>
   
   
@@ -25,6 +43,21 @@
     stopTime = Date.now()
     console.log(stopTime)
   } 
+  function startTime(){
+    for (let i = 0; i < 5; i++) {
+      setTimeout(function(){
+        document.getElementById("counter").innerHTML = i;
+      }, (4-i) * 1000);
+    }setTimeout(function(){
+      if (stopTime === undefined){
+        document.getElementById("target").innerHTML = "\"You're too slow \" - Sonic the Hedgehog"
+      }else{
+        var newTime = Date.now()
+        newTime = newTime - stopTime
+        document.getElementById("target").innerHTML = "Time was: " + newTime
+      }
+    },4000)
+  }
   function buttonPress1() {
     setTimeout(function(){
       document.getElementById('target').style.color = "red"
