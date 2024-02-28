@@ -3,6 +3,6 @@
 An assignment on java script modifying the DOM and using anonymous callback functions.
 
 # Hosted at (right below)
--  [Shmoney](https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment7-DopeAnt25/)
--  [Timer](https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment7-DopeAnt25/)
--  [Lists](https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment7-DopeAnt25/)
+-  [Shmoney](https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment7-DopeAnt25/money.html)
+-  [Timer](https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment7-DopeAnt25/precision.html)
+-  [Lists](https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment7-DopeAnt25/divlist.html)
